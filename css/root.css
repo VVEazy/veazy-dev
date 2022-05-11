@@ -1,0 +1,13 @@
+body {
+  font-family: "Roboto";
+}
+.container {
+  max-width: 1140px;
+}
+
+:root {
+  --color-black: #000;
+  --color-white: #fff;
+  --color-main-light: #e3e8ff;
+  --color-main-dark: #4a5aa6;
+}

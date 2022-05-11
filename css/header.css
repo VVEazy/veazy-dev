@@ -1,0 +1,94 @@
+.header {
+  background-color: #000000;
+}
+.header__content {
+  align-items: center;
+}
+
+.header__content {
+  padding: 10px 0;
+}
+
+.logo__column {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-end;
+}
+
+.logo__link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.logo__title {
+  font-family: "Roboto";
+  font-size: 40px;
+  line-height: 36px;
+}
+
+.logo__title span {
+  display: inline-block;
+  transform: rotate(180deg);
+  font-family: "Roboto";
+}
+
+.logo__desc {
+  font-family: "Roboto";
+  font-size: 10px;
+}
+
+.header__menu {
+  align-items: center;
+}
+.menu__list {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.menu__item {
+  margin-left: 45px;
+}
+
+.menu__link {
+  color: #ffffff;
+}
+
+.header__social {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.social__link {
+  width: 20px;
+  height: 20px;
+}
+.git {
+  width: 20px;
+  height: 20px;
+  content: "";
+  background: url(../img/icon/github.svg) center center no-repeat;
+  background-size: cover;
+}
+
+.inst {
+  width: 20px;
+  height: 20px;
+  content: "";
+  background: url(../img/icon/instagram.svg) center center no-repeat;
+  background-size: cover;
+}
+
+.vk {
+  width: 20px;
+  height: 20px;
+  content: "";
+  background: url(../img/icon/vk.svg) center center no-repeat;
+  background-size: cover;
+}
+
+.inst,
+.vk {
+  margin-left: 30px;
+}

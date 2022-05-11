@@ -1,0 +1,16 @@
+.hero {
+  background: url(../img/background/background.jpg) center center no-repeat;
+  background-size: cover;
+}
+.hero__content {
+  display: flex;
+  justify-content: flex-end;
+  padding: 150px 0;
+}
+
+.hero__title {
+  margin: 0;
+  color: #ffffff;
+  font-size: 60px;
+  font-weight: 700;
+}
