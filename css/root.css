@@ -1,5 +1,6 @@
 body {
-  font-family: "Roboto";
+  font-family: "Space Mono", monospace;
+  background-color: #eae8e7;
 }
 .container {
   max-width: 1140px;

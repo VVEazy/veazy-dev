@@ -1,3 +1,6 @@
+.stack {
+  padding: 10% 0;
+}
 .stack__text {
   display: flex;
   flex-flow: column;
