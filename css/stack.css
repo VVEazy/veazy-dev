@@ -9,14 +9,15 @@
   justify-content: center;
 }
 .stack__title {
-  font-size: 40px;
+  font-size: 60px;
   font-weight: 700;
 }
 .stack__description {
+  font-family: "Roboto";
   font-size: 20px;
+  font-weight: 700;
 }
 .stack__list {
-  justify-content: flex-start;
   align-content: start;
   margin-bottom: 30px;
 }
@@ -30,7 +31,7 @@
   position: relative;
   border-radius: 25px;
   overflow: hidden;
-  box-shadow: 0 4px 12px 2px rgb(0 26 52 / 16%);
+  box-shadow: 2px 5px 5px 2px rgb(203, 214, 223);
 }
 
 .stack__item:last-child {
@@ -157,11 +158,26 @@
 .stack__description_sub {
   display: flex;
   flex-flow: row nowrap;
-
+  font-weight: 700;
   justify-content: flex-start;
   align-items: center;
 
   font-size: 16px;
   line-height: 20px;
-  font-weight: 500;
+}
+
+.stack__img-php {
+  max-width: 80px;
+}
+
+.stack__img-jquery {
+  max-width: 140px;
+}
+
+.stack__img-sql {
+  max-width: 80px;
+}
+
+.stack__img-webpack {
+  max-width: 70px;
 }

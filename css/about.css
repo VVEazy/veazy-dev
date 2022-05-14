@@ -44,12 +44,14 @@
   border-radius: 25px;
 }
 
-/* .about__btn {
+.about__btn {
+  font-family: "Roboto";
+  font-weight: 500;
   cursor: pointer;
   padding: 20px 60px;
   background-color: black;
   font-size: 18px;
   color: #ffffff;
   border: none;
-  border-radius: 30px;
-} */
+  border-radius: 45px;
+}
