@@ -1,0 +1,24 @@
+.provacy {
+  padding: 5% 0;
+}
+.provacy__title {
+  font-weight: 700;
+  font-size: 30px;
+}
+.provacy__subtitle {
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 700;
+  margin: 50px 0;
+}
+.provacy__desc {
+  font-size: 20px;
+  margin: 20px 0;
+}
+.provacy__link {
+  color: #212121;
+  font-weight: 700;
+}
+.provacy__link:hover {
+  color: #212121;
+}
