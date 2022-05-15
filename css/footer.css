@@ -1,32 +1,45 @@
 .footer {
-  background-color: black;
+  padding: 5% 0 20px 0;
 }
-
-.footer__row {
-  justify-content: space-between;
-}
-.footer__content {
-  padding: 20px 0 20px 0;
-}
-
-.footer__title {
-  font-family: "Roboto";
-  font-size: 40px;
-  line-height: 36px;
-  color: white;
-}
-
-.footer__title span {
-  display: inline-block;
-  transform: rotate(180deg);
-  font-family: "Roboto";
-}
-.footer__list {
-  display: flex;
-  justify-content: space-between;
-}
-
 .footer__social {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+}
+.footer__bottom-bar {
+  padding: 50px 0 0 0;
+}
+.bottom-bar__title {
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto";
+  font-size: 20px;
+  font-weight: 700;
+}
+.bottom-bar__title span {
+  font-size: 30px;
+}
+.social__link {
+  width: 40px;
+  height: 40px;
+}
+.git {
+  width: 40px;
+  height: 40px;
+  content: "";
+  background: url(../img/icon/github.png) center center no-repeat;
+  background-size: cover;
+}
+.inst {
+  width: 40px;
+  height: 40px;
+  content: "";
+  background: url(../img/icon/inst.png) center center no-repeat;
+  background-size: cover;
+}
+.vk {
+  width: 40px;
+  height: 40px;
+  content: "";
+  background: url(../img/icon/vk.png) center center no-repeat;
+  background-size: cover;
 }

@@ -1,2 +1,0 @@
-# veazy-dev
-pers site

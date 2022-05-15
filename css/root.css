@@ -3,8 +3,31 @@ body {
   background-color: #eae8e7;
   color: #212121;
 }
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  color: #212121;
+  font-weight: 700;
+}
+
+button,
+p,
+a {
+  font-family: "Roboto";
+  color: #212121;
+  margin: 0;
+  font-weight: 400;
+}
 .container {
   max-width: 1140px;
+}
+a,
+button:hover {
+  color: #0a58ca;
+  transition: color 0.4s ease-in-out;
 }
 
 :root {
@@ -12,4 +35,9 @@ body {
   --color-white: #fff;
   --color-main-light: #e3e8ff;
   --color-main-dark: #4a5aa6;
+}
+
+input,
+textarea {
+  outline: none;
 }

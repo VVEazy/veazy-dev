@@ -6,29 +6,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <!-- SEO -->
     <title>VEazy</title>
     <meta name="description" content="Vladislav Eziashvili">
-
     <!-- FAVICON -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="img/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
-    <link rel="icon" type="img/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/img/favicon/site.webmanifest">
-    <link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg" color="#000000">
     <meta name="msapplication-TileColor" content="#000000">
     <meta name="theme-color" content="#ffffff">
-
     <!-- STYLE -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css" />
-
     <!-- SCRIPT -->
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/index.js" defer></script>
 </head>
 
 <body>
+    <!-- HEADER -->
+
     <header class="header">
         <div class="container">
             <div class="header__content row justify-content-between">
@@ -39,24 +34,6 @@
                         </div>
                     </a>
                 </div>
-                <!-- <div class="header__menu menu col-lg-8">
-                    <nav class="menu__block">
-                        <li class="menu__list">
-                            <ul class="menu__item">
-                                <a href="#" class="menu__link">Главная</a>
-                            </ul>
-                            <ul class="menu__item">
-                                <a href="#" class="menu__link">Портфолио</a>
-                            </ul>
-                            <ul class="menu__item">
-                                <a href="#" class="menu__link">Обо мне</a>
-                            </ul>
-                            <ul class="menu__item">
-                                <a href="#" class="menu__link">Контакты</a>
-                            </ul>
-                        </li>
-                    </nav>
-                </div> -->
                 <div class="header__social social col-lg-2">
                     <a href="https://github.com/VVEazy" class="social__link git"></a>
                     <a href="https://vk.com/eziashvili.vladislav" class="social__link vk"></a>
@@ -65,19 +42,12 @@
             </div>
         </div>
     </header>
+
+    <!-- MAIN -->
     <main class="main">
-        <!-- <section class="hero">
-            <div class="container">
-                <div class="hero__content">
-                    <div class="hero__prew">
-                        <h1 class="hero__title">
-                            frontend developer <br />
-                            html coder
-                        </h1>
-                    </div>
-                </div>
-            </div>
-        </section> -->
+
+        <!-- ABOUT -->
+
         <section class="about">
             <div class="container">
                 <div class="about__content">
@@ -85,7 +55,7 @@
                         <div class="about__column col-lg-10 col-10">
                             <h2 class="about__title">
                                 Hello! <br>
-                                I`am junior-frontend developer & html coder
+                                I`m a junior-frontend developer & html coder
                                 <br>
                             </h2>
                             <button class="about__btn">Подробно обо мне</button>
@@ -94,6 +64,9 @@
                 </div>
             </div>
         </section>
+
+        <!-- STACK -->
+
         <section class="stack">
             <div class="container">
                 <div class="stack__content">
@@ -104,189 +77,260 @@
                     <div class="stack__content">
                         <div class="stack__list row justify-content-start">
                             <!-- HTML -->
-                            <div class="stack__list-col col-lg-2 ">
+                            <div class="stack__list-col col-lg-3 col-sm-4 col-4 ">
+                                <div class="modal fade" id="exampleModal" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Сертификаты HTML</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <img src="./img/certif/HTML_CSS_1.png" alt="">
+                                            <img src="./img/certif/HTML_CSS_2.png" alt="">
+                                            <img src="./img/certif/HTML_CSS_3.png" alt="">
+                                            <img src="./img/certif/HTML_CSS_4.png" alt="">
+                                            <img src="./img/certif/HTML_CSS_5.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="stack__item stack__item_hover">
                                     <div class="stack__row stack__row_hover">
-                                        <img src="/veazy-dev/img/icon/html_white.png" alt="" class="stack__img">
-                                        <button type="button" class="stack__btn">Просмотреть сертификат</button>
+                                        <img src="./img/stack/html_white.png" alt="" class="stack__img">
+
+                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal">
+                                            Просмотреть сертификат
+                                        </button>
                                     </div>
                                     <div class="stack__row stack__row_main">
                                         <div class="cirlce stack__cirlce stack__cirlce_position"></div>
-                                        <img src="/veazy-dev/img/icon/html_color.png" alt="" class="stack__img">
+                                        <img src="./img/stack/html_color.png" alt="" class="stack__img">
                                     </div>
                                 </div>
                             </div>
                             <!-- CSS -->
-                            <div class="stack__list-col col-lg-2 ">
+                            <div class="stack__list-col col-lg-3 col-sm-4 col-4 ">
+                                <div class="modal fade" id="exampleModal" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-git">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Сертификат Git</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <img src="./img/certif/git.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="stack__item stack__item_hover">
-                                    <div class="stack__row stack__row_hover stack__row_hover_rotate-270">
-                                        <img src="/veazy-dev/img/icon/css_white.png" alt="" class="stack__img">
-                                        <button type="button" class="stack__btn">Просмотреть сертификат</button>
+                                    <div class="stack__row stack__row_hover">
+                                        <img src="./img/stack/css_white.png" alt="" class="stack__img">
+
+                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal">
+                                            Просмотреть сертификат
+                                        </button>
                                     </div>
                                     <div class="stack__row stack__row_main">
                                         <div class="cirlce stack__cirlce stack__cirlce_position"></div>
-                                        <img src="/veazy-dev/img/icon/css_color.png" alt="" class="stack__img">
+                                        <img src="./img/stack/css_color.png" alt="" class="stack__img">
                                     </div>
                                 </div>
                             </div>
                             <!-- JavaScropt -->
-                            <div class="stack__list-col col-lg-2 ">
+                            <div class="stack__list-col col-lg-3 col-sm-4 col-4 ">
                                 <div class="stack__item">
                                     <div class="stack__row stack__row_hover stack__row_hover_rotate-90">
-                                        <img src="/veazy-dev/img/icon/js_white.png" alt="" class="stack__img">
+                                        <img src="./img/stack/js_color.png" alt="" class="stack__img">
                                     </div>
                                     <div class="stack__row stack__row_main">
-                                        <img src="/veazy-dev/img/icon/js_color.png" alt="" class="stack__img">
+                                        <img src="./img/stack/js_color.png" alt="" class="stack__img">
                                     </div>
                                 </div>
                             </div>
                             <!-- GitHub -->
-                            <div class="stack__list-col col-lg-2 ">
+                            <div class="stack__list-col col-lg-3 col-sm-4 col-4 ">
+                                <div class="modal fade" id="exampleModal" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Сертификат Git</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <img src="./img/certif/git.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="stack__item stack__item_hover">
-                                    <div class="stack__row stack__row_hover stack__row_hover_rotate-180">
-                                        <img src="/veazy-dev/img/icon/git_white.png" alt="" class="stack__img">
-                                        <button type="button" class="stack__btn">Просмотреть сертификат</button>
+                                    <div class="stack__row stack__row_hover">
+                                        <img src="./img/stack/git_white.png" alt="" class="stack__img">
+
+                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal">
+                                            Просмотреть сертификат
+                                        </button>
                                     </div>
                                     <div class="stack__row stack__row_main">
                                         <div class="cirlce stack__cirlce stack__cirlce_position"></div>
-                                        <img src="/veazy-dev/img/icon/git_color.png" alt="" class="stack__img">
+                                        <img src="./img/stack/git_color.png" alt="" class="stack__img">
                                     </div>
                                 </div>
                             </div>
                             <!-- SASS -->
-                            <div class="stack__list-col col-lg-2 ">
+                            <div class="stack__list-col col-lg-3 col-sm-4 col-4 ">
+                                <div class="modal fade" id="exampleModal" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Сертификат Git</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <img src="./img/certif/git.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="stack__item stack__item_hover">
                                     <div class="stack__row stack__row_hover">
-                                        <img src="/veazy-dev/img/icon/sass_white.png" alt="" class="stack__img">
-                                        <button type="button" class="stack__btn">Просмотреть сертификат</button>
+                                        <img src="./img/stack/sass_white.png" alt="" class="stack__img">
+
+                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal">
+                                            Просмотреть сертификат
+                                        </button>
                                     </div>
                                     <div class="stack__row stack__row_main">
                                         <div class="cirlce stack__cirlce stack__cirlce_position"></div>
-                                        <img src="/veazy-dev/img/icon/sass_color.png" alt="" class="stack__img">
+                                        <img src="./img/stack/sass_color.png" alt="" class="stack__img">
                                     </div>
                                 </div>
                             </div>
                             <!-- Bootstrap -->
-                            <div class="stack__list-col col-lg-2 ">
+                            <div class="stack__list-col col-lg-3 col-sm-4 col-4 ">
                                 <div class="stack__item">
                                     <div class="stack__row stack__row_hover stack__row_hover_rotate-180">
-                                        <img src="/veazy-dev/img/icon/bootstrap.svg" alt="" class="stack__img">
+                                        <img src="./img/stack/bootstrap.svg" alt="" class="stack__img">
                                     </div>
                                     <div class="stack__row stack__row_main">
-                                        <img src="/veazy-dev/img/icon/bootstrap.svg" alt="" class="stack__img">
+                                        <img src="./img/stack/bootstrap.svg" alt="" class="stack__img">
                                     </div>
                                 </div>
                             </div>
                             <!-- PHP -->
-                            <div class="stack__list-col col-lg-2 ">
+                            <div class="stack__list-col col-lg-3 col-sm-4 col-4 ">
                                 <div class="stack__item">
                                     <div class="stack__row stack__row_hover stack__row_hover_rotate-180">
-                                        <img src="/veazy-dev/img/icon/php.png" alt="" class="stack__img">
+                                        <img src="./img/stack/php.png" alt="" class="stack__img">
                                     </div>
                                     <div class="stack__row stack__row_main">
-                                        <img src="/veazy-dev/img/icon/php.png" alt="" class="stack__img stack__img-php">
+                                        <img src="./img/stack/php.png" alt="" class="stack__img stack__img-php">
                                     </div>
                                 </div>
                             </div>
                             <!-- jQuery -->
-                            <div class="stack__list-col col-lg-2 ">
+                            <div class="stack__list-col col-lg-3 col-sm-4 col-4 ">
                                 <div class="stack__item">
                                     <div class="stack__row stack__row_hover stack__row_hover_rotate-180">
-                                        <img src="/veazy-dev/img/icon/jQuery.png" alt="" class="stack__img">
+                                        <img src="./img/stack/jQuery.png" alt="" class="stack__img">
                                     </div>
                                     <div class="stack__row stack__row_main">
-                                        <img src="/veazy-dev/img/icon/jQuery.png" alt=""
-                                            class="stack__img stack__img-jquery">
+                                        <img src="./img/stack/jQuery.png" alt="" class="stack__img stack__img-jquery">
                                     </div>
                                 </div>
                             </div>
                             <!-- BEM -->
-                            <div class="stack__list-col col-lg-2 ">
+                            <div class="stack__list-col col-lg-3 col-sm-4 col-4 ">
                                 <div class="stack__item">
                                     <div class="stack__row stack__row_hover stack__row_hover_rotate-180">
-                                        <img src="/veazy-dev/img/icon/bem_color.png" alt="" class="stack__img">
+                                        <img src="./img/stack/bem_color.png" alt="" class="stack__img">
                                     </div>
                                     <div class="stack__row stack__row_main">
-                                        <img src="/veazy-dev/img/icon/bem_color.png" alt="" class="stack__img">
+                                        <img src="./img/stack/bem_color.png" alt="" class="stack__img">
                                     </div>
                                 </div>
                             </div>
                             <!-- React -->
-                            <div class="stack__list-col col-lg-2 ">
+                            <div class="stack__list-col col-lg-3 col-sm-4 col-4 ">
                                 <div class="stack__item">
                                     <div class="stack__row stack__row_hover stack__row_hover_rotate-180">
-                                        <img src="/veazy-dev/img/icon/react.svg" alt="" class="stack__img">
+                                        <img src="./img/stack/react.svg" alt="" class="stack__img">
                                     </div>
                                     <div class="stack__row stack__row_main">
-                                        <img src="/veazy-dev/img/icon/react.svg" alt="" class="stack__img">
+                                        <img src="./img/stack/react.svg" alt="" class="stack__img">
                                     </div>
                                 </div>
                             </div>
                             <!-- Redux -->
-                            <div class="stack__list-col col-lg-2 ">
+                            <div class="stack__list-col col-lg-3 col-sm-4 col-4 ">
                                 <div class="stack__item">
                                     <div class="stack__row stack__row_hover stack__row_hover_rotate-180">
-                                        <img src="/veazy-dev/img/icon/redux.png" alt="" class="stack__img">
+                                        <img src="./img/stack/redux.png" alt="" class="stack__img">
                                     </div>
                                     <div class="stack__row stack__row_main">
-                                        <img src="/veazy-dev/img/icon/redux.png" alt="" class="stack__img">
+                                        <img src="./img/stack/redux.png" alt="" class="stack__img">
                                     </div>
                                 </div>
                             </div>
                             <!-- WordPess -->
-                            <div class="stack__list-col col-lg-2 ">
+                            <div class="stack__list-col col-lg-3 col-sm-4 col-4 ">
                                 <div class="stack__item">
                                     <div class="stack__row stack__row_hover stack__row_hover_rotate-180">
-                                        <img src="/veazy-dev/img/icon/wordpress.png" alt="" class="stack__img">
+                                        <img src="./img/stack/wordpress.png" alt="" class="stack__img">
                                     </div>
                                     <div class="stack__row stack__row_main">
-                                        <img src="/veazy-dev/img/icon/wordpress.png" alt="" class="stack__img">
+                                        <img src="./img/stack/wordpress.png" alt="" class="stack__img">
                                     </div>
                                 </div>
                             </div>
                             <!-- Gulp -->
-                            <div class="stack__list-col col-lg-2 ">
+                            <div class="stack__list-col col-lg-3 col-sm-4 col-4 ">
                                 <div class="stack__item">
                                     <div class="stack__row stack__row_hover stack__row_hover_rotate-180">
-                                        <img src="/veazy-dev/img/icon/gulp.png" alt="" class="stack__img">
+                                        <img src="./img/stack/gulp.png" alt="" class="stack__img">
                                     </div>
                                     <div class="stack__row stack__row_main">
-                                        <img src="/veazy-dev/img/icon/gulp.png" alt="" class="stack__img">
+                                        <img src="./img/stack/gulp.png" alt="" class="stack__img">
                                     </div>
                                 </div>
                             </div>
                             <!-- Sql -->
-                            <div class="stack__list-col col-lg-2 ">
+                            <div class="stack__list-col col-lg-3 col-sm-4 col-4 ">
                                 <div class="stack__item">
                                     <div class="stack__row stack__row_hover stack__row_hover_rotate-180">
-                                        <img src="/veazy-dev/img/icon/mysql.png" alt="" class="stack__img">
+                                        <img src="./img/stack/mysql.png" alt="" class="stack__img">
                                     </div>
                                     <div class="stack__row stack__row_main">
-                                        <img src="/veazy-dev/img/icon/mysql.png" alt=""
-                                            class="stack__img stack__img-sql">
+                                        <img src="./img/stack/mysql.png" alt="" class="stack__img stack__img-sql">
                                     </div>
                                 </div>
                             </div>
                             <!-- Webpack -->
-                            <div class="stack__list-col col-lg-2 ">
+                            <div class="stack__list-col col-lg-3 col-sm-4 col-4 ">
                                 <div class="stack__item">
                                     <div class="stack__row stack__row_hover stack__row_hover_rotate-180">
-                                        <img src="/veazy-dev/img/icon/webpack.png" alt="" class="stack__img">
+                                        <img src="./img/stack/webpack.png" alt="" class="stack__img">
                                     </div>
                                     <div class="stack__row stack__row_main">
-                                        <img src="/veazy-dev/img/icon/webpack.png" alt=""
-                                            class="stack__img stack__img-webpack">
+                                        <img src="./img/stack/webpack.png" alt="" class="stack__img stack__img-webpack">
                                     </div>
                                 </div>
                             </div>
                             <!-- PS -->
-                            <div class="stack__list-col col-lg-2 ">
-                                <div class="stack__item">
+                            <div class="stack__list-col col-lg-3 col-sm-4 col-4 ">
+                                <div class="stack__item stack__item_hover">
                                     <div class="stack__row stack__row_hover stack__row_hover_rotate-180">
-                                        <img src="/veazy-dev/img/icon/ps.png" alt="" class="stack__img">
+                                        <img src="./img/stack/ps.png" alt="" class="stack__img">
+                                        <button type="button" class="stack__btn">Просмотреть сертификат</button>
                                     </div>
                                     <div class="stack__row stack__row_main">
-                                        <img src="/veazy-dev/img/icon/ps.png" alt="" class="stack__img">
+                                        <div class="cirlce stack__cirlce stack__cirlce_position"></div>
+                                        <img src="./img/stack/ps.png" alt="" class="stack__img">
                                     </div>
                                 </div>
                             </div>
@@ -300,10 +344,13 @@
                 </div>
             </div>
         </section>
+
+        <!-- WORKS -->
+
         <section class="works">
             <div class="container">
                 <div class="works__content">
-                    <div class="works__row row">
+                    <div class="works__row row justify-content-around">
                         <div class="works__block-text">
                             <h3 class="works__title">Мои работы</h3>
                             <p class="works__desc">Выполненые заказы будут располагаться тут</p>
@@ -320,7 +367,7 @@
                                         </p>
                                     </div>
                                     <div>
-                                        <img src="img/work/work1.png" class="block__img" alt="Сайт Лагуна">
+                                        <img src="./img/work/evklid.png" class="block__img" alt="Сайт Лагуна">
                                         <a class="block__btn">Посмотреть</a>
                                     </div>
                                 </div>
@@ -336,7 +383,7 @@
                                         </p>
                                     </div>
                                     <div>
-                                        <img src="img/work/lagoona.png" class="block__img" alt="Сайт Лагуна">
+                                        <img src="./img/work/lagoona.png" class="block__img" alt="Сайт Лагуна">
                                         <a class="block__btn">Посмотреть</a>
                                     </div>
                                 </div>
@@ -348,12 +395,11 @@
                                             Gaslur
                                         </h2>
                                         <p class="block__desc">
-                                            Далеко-далеко за словесными горами в стране.
+                                            Вёрстка посадочной страницы
                                         </p>
                                     </div>
                                     <div>
-                                        <img src="https://demo.tagdiv.com/select_demo/wp-content/uploads/2022/02/popup-perspective-screens.png"
-                                            class="block__img" alt="Сайт Лагуна">
+                                        <img src="./img/work/gaslur.png" class="block__img" alt="Сайт Лагуна">
                                         <a class="block__btn">Посмотреть</a>
                                     </div>
                                 </div>
@@ -362,14 +408,14 @@
                                 <div class="works__item-wrapper">
                                     <div class="works__text">
                                         <h2 class="block__title">
-                                            Рецепт Любви
+                                            Recept Lubvi
                                         </h2>
                                         <p class="block__desc">
                                             Адаптивная верстка письма
                                         </p>
                                     </div>
                                     <div>
-                                        <img src="img/work/recept.png" class="block__img" alt="Сайт Лагуна">
+                                        <img src="./img/work/recept.png" class="block__img" alt="Сайт Лагуна">
                                         <a class="block__btn">Посмотреть</a>
                                     </div>
                                 </div>
@@ -382,37 +428,61 @@
                 </div>
             </div>
         </section>
-    </main>
-    <!-- <footer class="footer">
-        <div class="container">
-            <div class="footer__content">
-                <div class="footer__row row align-items-center">
-                    <div class="footer__logo col-lg-2">
-                        <span class="footer__title">VE<span>A</span>ZY</span>
-                    </div>
-                    <ul class="footer__list col-lg-8">
-                        <li class="footer__item">
-                            <a href="#" class="footer__link">Главная</a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="#" class="footer__link">Портфолио</a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="#" class="footer__link">Обо мне</a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="#" class="footer__link">Контакты</a>
-                        </li>
-                    </ul>
-                    <div class="footer__social social col-lg-2">
-                        <a href="#" class="social__link git"></a>
-                        <a href="#" class="social__link vk"></a>
-                        <a href="#" class="social__link inst"></a>
+
+        <!-- FORM -->
+
+        <section class="form">
+            <div class="container">
+                <div class="form__content">
+                    <div class="form">
+                        <h2 class="form__title">Для сотрудничества</h2>
+                        <form action="" class="form__valid row justify-content-around">
+                            <label class="form__label col-lg-8 col-sm-8 col-12" for="name"><input class="form__input"
+                                    id="name" type="text" name="Имя" placeholder="Имя*"
+                                    data-validate-field="name"></label>
+                            <label class="form__label col-lg-8 col-sm-8 col-12" for="email"><input class="form__input"
+                                    id="email" type="email" name="email" placeholder="Email*"
+                                    data-validate-field="mail"></label>
+                            <div class="form__block col-lg-8 col-sm-8 col-12">
+                                <textarea class="form__text" name="text" id="text" cols="30" rows="10"
+                                    placeholder="Расскажите, какой проект хотите?"></textarea>
+                            </div>
+                            <div class="col-lg-6 col-6">
+                                <button class="form__btn">Отправить</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+
+    <header class="footer">
+        <div class="container">
+            <div class="footer__content row justify-content-between">
+                <div class="footer__logo logo col-lg-2">
+                    <a href="/" class="logo__link">
+                        <div class="logo__column">
+                            <span class="logo__title">VEAZY</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="footer__social social col-lg-2">
+                    <a href="https://github.com/VVEazy" class="social__link git"></a>
+                    <a href="https://vk.com/eziashvili.vladislav" class="social__link vk"></a>
+                    <a href="https://instagram/vladislav.vasilich" class="social__link inst"></a>
+                </div>
+            </div>
+            <div class="footer__bottom-bar bottom-bar row justify-content-center">
+                <div class="bottom-bar__text col-lg-3 col-12">
+                    <span class="bottom-bar__title">VEAZY.RU © 2022</span>
+                </div>
+            </div>
         </div>
-    </footer> -->
+    </header>
+
 </body>
 
 </html>
