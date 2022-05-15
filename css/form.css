@@ -9,6 +9,7 @@
   flex-flow: column;
   margin-bottom: 20px;
   align-items: center;
+  text-align: center;
 }
 .form__input {
   font-family: "Roboto";
